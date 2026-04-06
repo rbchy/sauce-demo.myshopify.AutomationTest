@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="253.093" tests="17" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="webdriver.chrome.driver" value="/Users/ranajitchowdhury/.cache/selenium/chromedriver/mac64/146.0.7680.165/chromedriver"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/ranajitchowdhury/eclipse-workspace/Sauce_Demo_Automation_Final/target/test-classes:/Users/ranajitchowdhury/eclipse-workspace/Sauce_Demo_Automation_Final/target/classes:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-java/4.14.0/selenium-java-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-api/4.14.0/selenium-api-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.14.0/selenium-chrome-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/ranajitchowdhury/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/ranajitchowdhury/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/ranajitchowdhury/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/ranajitchowdhury/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/ranajitchowdhury/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/ranajitchowdhury/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/ranajitchowdhury/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.14.0/selenium-chromium-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-json/4.14.0/selenium-json-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.14.0/selenium-manager-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v116/4.14.0/selenium-devtools-v116-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.14.0/selenium-devtools-v117-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.14.0/selenium-devtools-v118-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.14.0/selenium-devtools-v85-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.14.0/selenium-edge-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.14.0/selenium-firefox-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-http/4.14.0/selenium-http-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.14.0/selenium-ie-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.14.0/selenium-remote-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/ranajitchowdhury/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-os/4.14.0/selenium-os-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.14.0/selenium-safari-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-support/4.14.0/selenium-support-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/ranajitchowdhury/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/ranajitchowdhury/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/ranajitchowdhury/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-java/7.18.0/cucumber-java-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-core/7.18.0/cucumber-core-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-gherkin/7.18.0/cucumber-gherkin-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.18.0/cucumber-gherkin-messages-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/testng-xml-formatter/0.1.0/testng-xml-formatter-0.1.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/datatable/7.18.0/datatable-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-plugin/7.18.0/cucumber-plugin-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/docstring/7.18.0/docstring-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/html-formatter/21.3.1/html-formatter-21.3.1.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/junit-xml-formatter/0.4.0/junit-xml-formatter-0.4.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/ranajitchowdhury/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-testng/7.18.0/cucumber-testng-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-junit/7.18.0/cucumber-junit-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/Users/ranajitchowdhury/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/ranajitchowdhury/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/ranajitchowdhury/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/ranajitchowdhury/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/ranajitchowdhury/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/ranajitchowdhury/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/ranajitchowdhury/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/ranajitchowdhury/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/ranajitchowdhury/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/ranajitchowdhury/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/ranajitchowdhury/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/ranajitchowdhury/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/ranajitchowdhury/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/ranajitchowdhury/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/ranajitchowdhury/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/ranajitchowdhury/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/ranajitchowdhury/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/ranajitchowdhury/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Users/ranajitchowdhury/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.7.v20250502-0916/jre/lib"/>
+    <property name="sun.java.command" value="/Users/ranajitchowdhury/eclipse-workspace/Sauce_Demo_Automation_Final/target/surefire/surefirebooter-20260406173005487_3.jar /Users/ranajitchowdhury/eclipse-workspace/Sauce_Demo_Automation_Final/target/surefire 2026-04-06T17-30-05_381-jvmRun1 surefire-20260406173005487_1tmp surefire_0-20260406173005487_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/ranajitchowdhury/eclipse-workspace/Sauce_Demo_Automation_Final/target/test-classes:/Users/ranajitchowdhury/eclipse-workspace/Sauce_Demo_Automation_Final/target/classes:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-java/4.14.0/selenium-java-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-api/4.14.0/selenium-api-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.14.0/selenium-chrome-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/ranajitchowdhury/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/ranajitchowdhury/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/ranajitchowdhury/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/ranajitchowdhury/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/ranajitchowdhury/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/ranajitchowdhury/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/ranajitchowdhury/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.14.0/selenium-chromium-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-json/4.14.0/selenium-json-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.14.0/selenium-manager-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v116/4.14.0/selenium-devtools-v116-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v117/4.14.0/selenium-devtools-v117-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v118/4.14.0/selenium-devtools-v118-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.14.0/selenium-devtools-v85-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.14.0/selenium-edge-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.14.0/selenium-firefox-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-http/4.14.0/selenium-http-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.14.0/selenium-ie-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.14.0/selenium-remote-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/ranajitchowdhury/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/ranajitchowdhury/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-os/4.14.0/selenium-os-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.14.0/selenium-safari-driver-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/seleniumhq/selenium/selenium-support/4.14.0/selenium-support-4.14.0.jar:/Users/ranajitchowdhury/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/ranajitchowdhury/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/ranajitchowdhury/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/ranajitchowdhury/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-java/7.18.0/cucumber-java-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-core/7.18.0/cucumber-core-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-gherkin/7.18.0/cucumber-gherkin-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.18.0/cucumber-gherkin-messages-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/testng-xml-formatter/0.1.0/testng-xml-formatter-0.1.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/datatable/7.18.0/datatable-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-plugin/7.18.0/cucumber-plugin-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/docstring/7.18.0/docstring-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/html-formatter/21.3.1/html-formatter-21.3.1.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/junit-xml-formatter/0.4.0/junit-xml-formatter-0.4.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/ranajitchowdhury/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-testng/7.18.0/cucumber-testng-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/cucumber/cucumber-junit/7.18.0/cucumber-junit-7.18.0.jar:/Users/ranajitchowdhury/.m2/repository/io/github/bonigarcia/webdrivermanager/5.5.3/webdrivermanager-5.5.3.jar:/Users/ranajitchowdhury/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/ranajitchowdhury/.m2/repository/com/github/docker-java/docker-java/3.3.3/docker-java-3.3.3.jar:/Users/ranajitchowdhury/.m2/repository/com/github/docker-java/docker-java-core/3.3.3/docker-java-core-3.3.3.jar:/Users/ranajitchowdhury/.m2/repository/com/github/docker-java/docker-java-api/3.3.3/docker-java-api-3.3.3.jar:/Users/ranajitchowdhury/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/ranajitchowdhury/.m2/repository/commons-io/commons-io/2.6/commons-io-2.6.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/ranajitchowdhury/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/ranajitchowdhury/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/ranajitchowdhury/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.75/bcpkix-jdk18on-1.75.jar:/Users/ranajitchowdhury/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.75/bcprov-jdk18on-1.75.jar:/Users/ranajitchowdhury/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.75/bcutil-jdk18on-1.75.jar:/Users/ranajitchowdhury/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/ranajitchowdhury/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.3/docker-java-transport-httpclient5-3.3.3.jar:/Users/ranajitchowdhury/.m2/repository/com/github/docker-java/docker-java-transport/3.3.3/docker-java-transport-3.3.3.jar:/Users/ranajitchowdhury/.m2/repository/net/java/dev/jna/jna/5.12.1/jna-5.12.1.jar:/Users/ranajitchowdhury/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/ranajitchowdhury/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/ranajitchowdhury/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/ranajitchowdhury/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/ranajitchowdhury"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="/Users/ranajitchowdhury/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_21.0.7.v20250502-0916/jre"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/ranajitchowdhury/eclipse-workspace/Sauce_Demo_Automation_Final"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/ranajitchowdhury/eclipse-workspace/Sauce_Demo_Automation_Final/target/surefire/surefirebooter-20260406173005487_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.7+6-LTS"/>
+    <property name="user.name" value="ranajitchowdhury"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.7+6"/>
+    <property name="localRepository" value="/Users/ranajitchowdhury/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/53/wqhwmn8n7l7fgbk_1c70l0jw0000gn/T/"/>
+    <property name="java.version" value="21.0.7"/>
+    <property name="user.dir" value="/Users/ranajitchowdhury/eclipse-workspace/Sauce_Demo_Automation_Final"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/ranajitchowdhury/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.7+6-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Verify cart page loads and shows empty cart message&quot;, &quot;Cart Smoke Tests&quot;](1)" classname="runner.TestRunner" time="21.337">
+    <system-out><![CDATA[
+@smoke
+Scenario: Verify cart page loads and shows empty cart message # src/test/resources/features/AddToCart.feature:7
+  Given user is on the Home page                              # steps.AddToCartSteps.user_is_on_the_home_page()
+  When user navigates to the cart page                        # steps.AddToCartSteps.user_navigates_to_the_cart_page()
+  Then the empty cart message should be visible               # steps.AddToCartSteps.the_empty_cart_message_should_be_visible()
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Apr 06, 2026 5:30:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:30:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify product page loads successfully&quot;, &quot;Cart Smoke Tests&quot;](2)" classname="runner.TestRunner" time="15.668">
+    <system-out><![CDATA[
+@smoke
+Scenario: Verify product page loads successfully                          # src/test/resources/features/AddToCart.feature:13
+  Given user is on the Home page                                          # steps.AddToCartSteps.user_is_on_the_home_page()
+  When user opens a product                                               # steps.AddToCartSteps.user_opens_a_product()
+  Then the product title, price, and Add to Cart button should be visible # steps.AddToCartSteps.product_details_should_be_visible()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:30:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:30:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify user can add a product to the cart&quot;, &quot;Cart Smoke Tests&quot;](3)" classname="runner.TestRunner" time="18.89">
+    <system-out><![CDATA[
+@smoke
+Scenario: Verify user can add a product to the cart # src/test/resources/features/AddToCart.feature:19
+  Given user is on the Home page                    # steps.AddToCartSteps.user_is_on_the_home_page()
+  When user opens a product                         # steps.AddToCartSteps.user_opens_a_product()
+  And user adds the product to the cart             # steps.AddToCartSteps.user_adds_the_product_to_the_cart()
+  And the cart should show 1 item                   # steps.AddToCartSteps.the_cart_should_show_1_item()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:30:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:30:50 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify homepage loads with essential UI elements&quot;, &quot;Home Page Smoke Tests&quot;](4)" classname="runner.TestRunner" time="11.292">
+    <system-out><![CDATA[
+@smoke
+Scenario: Verify homepage loads with essential UI elements # src/test/resources/features/HomePage.feature:7
+  Given user navigates to the homepage                     # steps.HomePageSteps.user_is_on_the_homepage()
+  Then left navigation panel should be visible             # steps.HomePageSteps.left_navigation_panel_should_be_visible()
+  And featured products section should be visible          # steps.HomePageSteps.featured_products_section_should_be_visible()
+  And each product card should be visible                  # steps.HomePageSteps.each_product_card_should_be_visible()
+  And product images should be visible                     # steps.HomePageSteps.product_images_should_be_visible()
+  And cart link should be visible                          # steps.HomePageSteps.cart_link_should_be_visible()
+  And checkout link should be visible                      # steps.HomePageSteps.checkout_link_should_be_visible()
+  And footer should be visible                             # steps.HomePageSteps.footer_should_be_visible()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:31:08 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:31:08 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Successful Login&quot;, &quot;SauceDemo Login&quot;](5)" classname="runner.TestRunner" time="13.081">
+    <system-out><![CDATA[
+@smoke
+Scenario: Successful Login                       # src/test/resources/features/LoginSteps.feature:4
+Opened SauceDemo Login Page
+  Given the user is on the login page            # steps.LoginSteps.openLoginPage()
+Entered valid credentials
+  When the user enters valid login credentials   # steps.LoginSteps.enterValidCredentials()
+Login Successful
+  Then the user should be logged in successfully # steps.LoginSteps.verifyLogin()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:31:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:31:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Logout&quot;, &quot;SauceDemo Login&quot;](6)" classname="runner.TestRunner" time="14.964">
+    <system-out><![CDATA[
+@smoke
+Scenario: Logout                                       # src/test/resources/features/LoginSteps.feature:10
+Opened SauceDemo Login Page
+  Given the user is on the login page                  # steps.LoginSteps.openLoginPage()
+Entered valid credentials
+  When the user enters valid login credentials         # steps.LoginSteps.enterValidCredentials()
+Login Successful
+  Then the user should be logged in successfully       # steps.LoginSteps.verifyLogin()
+✅ Logout clicked successfully
+  And the user clicks the Logout link                  # steps.LogoutSteps.clickLogout()
+✅ User redirected to login page successfully
+  Then the user should be redirected to the login page # steps.LogoutSteps.verifyLogout()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:31:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:31:34 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Catalog link opens the collection page&quot;, &quot;Navigation Links Smoke Suite&quot;](7)" classname="runner.TestRunner" time="15.196">
+    <system-out><![CDATA[
+@smoke
+Scenario: Verify Catalog link opens the collection page # src/test/resources/features/NavigationLinks.feature:7
+  Given user is on the homepage                         # steps.NavigationLinksSteps.user_is_on_the_homepage()
+  When user clicks the Catalog link                     # steps.NavigationLinksSteps.user_clicks_the_catalog_link()
+  Then collection page should load                      # steps.NavigationLinksSteps.collection_page_should_load()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:31:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:31:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Blog link opens the blog page&quot;, &quot;Navigation Links Smoke Suite&quot;](8)" classname="runner.TestRunner" time="14.281">
+    <system-out><![CDATA[
+@smoke
+Scenario: Verify Blog link opens the blog page # src/test/resources/features/NavigationLinks.feature:13
+  Given user is on the homepage                # steps.NavigationLinksSteps.user_is_on_the_homepage()
+  When user clicks the Blog link               # steps.NavigationLinksSteps.user_clicks_the_blog_link()
+  Then blog page should load                   # steps.NavigationLinksSteps.blog_page_should_load()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:32:03 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:32:03 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify left navigation About Us link opens the About page&quot;, &quot;Navigation Links Smoke Suite&quot;](9)" classname="runner.TestRunner" time="14.809">
+    <system-out><![CDATA[
+@smoke
+Scenario: Verify left navigation About Us link opens the About page # src/test/resources/features/NavigationLinks.feature:19
+  Given user is on the homepage                                     # steps.NavigationLinksSteps.user_is_on_the_homepage()
+  When user clicks the left navigation About Us link                # steps.NavigationLinksSteps.user_clicks_the_left_navigation_about_us_link()
+  Then about page should load                                       # steps.NavigationLinksSteps.about_page_should_load()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:32:18 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:32:18 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify Checkout link opens the cart page&quot;, &quot;Navigation Links Smoke Suite&quot;](10)" classname="runner.TestRunner" time="13.158">
+    <system-out><![CDATA[
+@smoke
+Scenario: Verify Checkout link opens the cart page # src/test/resources/features/NavigationLinks.feature:26
+  Given user is on the homepage                    # steps.NavigationLinksSteps.user_is_on_the_homepage()
+  When user clicks the cart link                   # steps.NavigationLinksSteps.user_clicks_the_checkout_link()
+  Then cart page should load                       # steps.NavigationLinksSteps.checkout_page_should_load()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:32:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:32:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify footer Search link opens the search page&quot;, &quot;Navigation Links Smoke Suite&quot;](11)" classname="runner.TestRunner" time="14.057">
+    <system-out><![CDATA[
+@smoke
+Scenario: Verify footer Search link opens the search page # src/test/resources/features/NavigationLinks.feature:32
+  Given user is on the homepage                           # steps.NavigationLinksSteps.user_is_on_the_homepage()
+  When user clicks the footer Search link                 # steps.NavigationLinksSteps.user_clicks_the_footer_search_link()
+  Then search page should load                            # steps.NavigationLinksSteps.search_page_should_load()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:32:45 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:32:45 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify footer About Us link opens the About Us page&quot;, &quot;Navigation Links Smoke Suite&quot;](12)" classname="runner.TestRunner" time="13.001">
+    <system-out><![CDATA[
+@smoke
+Scenario: Verify footer About Us link opens the About Us page # src/test/resources/features/NavigationLinks.feature:38
+  Given user is on the homepage                               # steps.NavigationLinksSteps.user_is_on_the_homepage()
+  When user clicks the footer About Us link                   # steps.NavigationLinksSteps.user_clicks_the_footer_about_us_link()
+  Then about page should load                                 # steps.NavigationLinksSteps.about_page_should_load()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:32:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:32:58 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Search bar is visible and accepts input&quot;, &quot;Search Smoke Tests&quot;](13)" classname="runner.TestRunner" time="11.443">
+    <system-out><![CDATA[
+@smoke
+Scenario: Search bar is visible and accepts input      # src/test/resources/features/SearchFunctionality.feature:7
+  Given I am on the home page                          # steps.SearchSteps.i_am_on_the_home_page()
+  Then the search bar should be visible                # steps.SearchSteps.the_search_bar_should_be_visible()
+  When I type into the search bar                      # steps.SearchSteps.i_type_into_the_search_bar()
+  Then the search input should contain the typed value # steps.SearchSteps.the_search_input_should_contain_the_typed_value()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:33:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:33:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Valid search returns results&quot;, &quot;Search Smoke Tests&quot;](14)" classname="runner.TestRunner" time="14.111">
+    <system-out><![CDATA[
+@smoke
+Scenario: Valid search returns results       # src/test/resources/features/SearchFunctionality.feature:14
+  Given I am on the home page                # steps.SearchSteps.i_am_on_the_home_page()
+  When I search for "Noir Jacket"            # steps.SearchSteps.i_search_for(java.lang.String)
+  Then search results should be displayed    # steps.SearchSteps.search_results_should_be_displayed()
+  And at least one product should be visible # steps.SearchSteps.at_least_one_product_should_be_visible()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:33:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:33:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Invalid search shows no results message&quot;, &quot;Search Smoke Tests&quot;](15)" classname="runner.TestRunner" time="15.306">
+    <system-out><![CDATA[
+@smoke
+Scenario: Invalid search shows no results message # src/test/resources/features/SearchFunctionality.feature:21
+  Given I am on the home page                     # steps.SearchSteps.i_am_on_the_home_page()
+  When I search for "Blue Shade"                  # steps.SearchSteps.i_search_for(java.lang.String)
+  Then a no results message should be displayed   # steps.SearchSteps.a_no_results_message_should_be_displayed()
+  And no products should be visible               # steps.SearchSteps.no_products_should_be_visible()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:33:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:33:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Clicking a search result opens product details page&quot;, &quot;Search Smoke Tests&quot;](16)" classname="runner.TestRunner" time="19.101">
+    <system-out><![CDATA[
+@smoke
+Scenario: Clicking a search result opens product details page # src/test/resources/features/SearchFunctionality.feature:28
+  Given I am on the home page                                 # steps.SearchSteps.i_am_on_the_home_page()
+  When I search for "Noir Jacket"                             # steps.SearchSteps.i_search_for(java.lang.String)
+  And I click the first product in search results             # steps.SearchSteps.i_click_the_first_product_in_search_results()
+  Then the product details page should be displayed           # steps.SearchSteps.the_product_details_page_should_be_displayed()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:33:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:33:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User tries to signup&quot;, &quot;SauceDemo Signup (Demo Simulation)&quot;](17)" classname="runner.TestRunner" time="11.775">
+    <system-out><![CDATA[
+@smoke @regression
+Scenario: User tries to signup                       # src/test/resources/features/SignUp.feature:4
+Opened SauceDemo Login Page
+  Given the user is on the login page                # steps.LoginSteps.openLoginPage()
+Entered invalid credentials
+  When the user enters invalid username and password # steps.LoginSteps.enterInvalidCredentials()
+Error message: Epic sadface: Username and password do not match any user in this service
+  Then the user should see an error message          # steps.LoginSteps.verifyErrorMessage()
+]]></system-out>
+    <system-err><![CDATA[Apr 06, 2026 5:34:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 146
+Apr 06, 2026 5:34:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 146.0.7680.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.14.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

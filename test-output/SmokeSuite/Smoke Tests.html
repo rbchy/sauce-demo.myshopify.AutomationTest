@@ -1,0 +1,601 @@
+<html>
+<head>
+<title>TestNG:  Smoke Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Smoke Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 11 00:22:27 EST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>123 seconds (123865 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should be able to log in with valid credentials", "Login Smoke Tests"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;customer-name&apos;]&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e22d1b6e61619387b0933a764132782d, findElement {value=//span[@class=&apos;customer-name&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\OWNER\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56998}, goog:processID: 19948, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56998/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e22d1b6e61619387b0933a764132782d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at steps.LoginSteps.the_user_should_be_logged_in_successfully(LoginSteps.java:50)
+	at ✽.the user should be logged in successfully(file:///C:/Users/OWNER/Eclipse-Workspace/SauceDemo/src/test/resources/features/LoginSteps.feature:19)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace737897289", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace737897289'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;customer-name&apos;]&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e22d1b6e61619387b0933a764132782d, findElement {value=//span[@class=&apos;customer-name&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\OWNER\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56998}, goog:processID: 19948, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56998/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e22d1b6e61619387b0933a764132782d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at steps.LoginSteps.the_user_should_be_logged_in_successfully(LoginSteps.java:50)
+	at ✽.the user should be logged in successfully(file:///C:/Users/OWNER/Eclipse-Workspace/SauceDemo/src/test/resources/features/LoginSteps.feature:19)
+</pre></div></td>
+<td>26</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Sign Up page loads successfully", "Sign Up Functionality"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the Home page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the Home page&quot;)
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the Sign Up page should be displayed&quot;)
+public void the_sign_up_page_should_be_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;all required fields should be visible&quot;)
+public void all_required_fields_should_be_visible() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:71)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2007031139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2007031139'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the Home page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the Home page&quot;)
+public void the_user_is_on_the_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the Sign Up page should be displayed&quot;)
+public void the_sign_up_page_should_be_displayed() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;all required fields should be visible&quot;)
+public void all_required_fields_should_be_visible() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:71)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify mandatory field validation on Sign Up", "Sign Up Functionality"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the Sign Up page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the Sign Up page&quot;)
+public void the_user_is_on_the_sign_up_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user clicks the {string} button without entering any details&quot;)
+public void the_user_clicks_the_button_without_entering_any_details(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;validation messages should be displayed for all required fields&quot;)
+public void validation_messages_should_be_displayed_for_all_required_fields() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:71)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1340769295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1340769295'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the Sign Up page&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the Sign Up page&quot;)
+public void the_user_is_on_the_sign_up_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user clicks the {string} button without entering any details&quot;)
+public void the_user_clicks_the_button_without_entering_any_details(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;validation messages should be displayed for all required fields&quot;)
+public void validation_messages_should_be_displayed_for_all_required_fields() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:71)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify successful account creation", "Sign Up Functionality"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the Sign Up page&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the Sign Up page&quot;)
+public void the_user_is_on_the_sign_up_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters valid first name, last name, email, and password&quot;)
+public void the_user_enters_valid_first_name_last_name_email_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user clicks the {string} button&quot;)
+public void the_user_clicks_the_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the account should be created successfully&quot;)
+public void the_account_should_be_created_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the user should be redirected to the Account page&quot;)
+public void the_user_should_be_redirected_to_the_account_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:71)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2124688514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2124688514'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the Sign Up page&apos; and 4 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;the user is on the Sign Up page&quot;)
+public void the_user_is_on_the_sign_up_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user enters valid first name, last name, email, and password&quot;)
+public void the_user_enters_valid_first_name_last_name_email_and_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;the user clicks the {string} button&quot;)
+public void the_user_clicks_the_button(String string) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the account should be created successfully&quot;)
+public void the_account_should_be_created_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;the user should be redirected to the Account page&quot;)
+public void the_user_should_be_redirected_to_the_account_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:71)
+	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify cart page loads and shows empty cart message", "Cart Smoke Tests"</td>
+<td><div><pre>io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in steps.LoginSteps.the_user_clicks_on(java.lang.String) and steps.SignUpStep.the_user_clicks_on(java.lang.String)
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:313)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:307)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1187779195", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1187779195'><pre>io.cucumber.core.runner.DuplicateStepDefinitionException: Duplicate step definitions in steps.LoginSteps.the_user_clicks_on(java.lang.String) and steps.SignUpStep.the_user_clicks_on(java.lang.String)
+	at io.cucumber.core.runner.CachingGlue.lambda$prepareGlue$3(CachingGlue.java:313)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at io.cucumber.core.runner.CachingGlue.prepareGlue(CachingGlue.java:307)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should be able to log out", "Login Smoke Tests"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;customer_logout_link&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [810021f2e59b3eae72fe058f9a80a2ce, findElement {value=customer_logout_link, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\OWNER\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63499}, goog:processID: 7124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63499/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 810021f2e59b3eae72fe058f9a80a2ce
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at steps.LoginSteps.the_user_clicks_the_logout_link(LoginSteps.java:68)
+	at ✽.the user clicks the Logout link(file:///C:/Users/OWNER/Eclipse-Workspace/SauceDemo/src/test/resources/features/LoginSteps.feature:25)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace380234542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace380234542'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;customer_logout_link&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [810021f2e59b3eae72fe058f9a80a2ce, findElement {value=customer_logout_link, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\OWNER\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63499}, goog:processID: 7124, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63499/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 810021f2e59b3eae72fe058f9a80a2ce
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at steps.LoginSteps.the_user_clicks_the_logout_link(LoginSteps.java:68)
+	at ✽.the user clicks the Logout link(file:///C:/Users/OWNER/Eclipse-Workspace/SauceDemo/src/test/resources/features/LoginSteps.feature:25)
+</pre></div></td>
+<td>14</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid search shows no results message", "Search Smoke Tests"</td>
+<td></td>
+<td>14</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify homepage loads with essential UI elements", "Home Page Smoke Tests"</td>
+<td></td>
+<td>3</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Checkout link opens the cart page", "Navigation Links Smoke Suite"</td>
+<td></td>
+<td>3</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Clicking a search result opens product details page", "Search Smoke Tests"</td>
+<td></td>
+<td>7</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify footer About Us link opens the About Us page", "Navigation Links Smoke Suite"</td>
+<td></td>
+<td>4</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Catalog link opens the collection page", "Navigation Links Smoke Suite"</td>
+<td></td>
+<td>4</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify product page loads successfully", "Cart Smoke Tests"</td>
+<td></td>
+<td>5</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Blog link opens the blog page", "Navigation Links Smoke Suite"</td>
+<td></td>
+<td>3</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search bar is visible and accepts input", "Search Smoke Tests"</td>
+<td></td>
+<td>3</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Valid search returns results", "Search Smoke Tests"</td>
+<td></td>
+<td>4</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify left navigation About Us link opens the About page", "Navigation Links Smoke Suite"</td>
+<td></td>
+<td>4</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify user can add a product to the cart", "Cart Smoke Tests"</td>
+<td></td>
+<td>7</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login page should load successfully", "Login Smoke Tests"</td>
+<td></td>
+<td>3</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+<tr>
+<td title='runner.SmokeTestRunner.runScenario()'><b>runScenario</b><br>Test class: runner.SmokeTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify footer Search link opens the search page", "Navigation Links Smoke Suite"</td>
+<td></td>
+<td>3</td>
+<td>runner.SmokeTestRunner@5aebe890</td></tr>
+</table><p>
+</body>
+</html>

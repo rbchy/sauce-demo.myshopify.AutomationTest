@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-02-12T18:27:22 EST" name="Default suite" finished-at="2026-02-12T18:27:44 EST" duration-ms="21893">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SmokeTestRunner@5aebe890]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-02-12T18:27:22 EST" name="Default test" finished-at="2026-02-12T18:27:44 EST" duration-ms="21893">
+      <class name="runner.SmokeTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.SmokeTestRunner@5aebe890]" started-at="2026-02-12T18:27:22 EST" name="setUpClass" finished-at="2026-02-12T18:27:23 EST" duration-ms="1284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@317e9c3c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SmokeTestRunner@5aebe890]" started-at="2026-02-12T18:27:23 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-12T18:27:31 EST" duration-ms="8117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Sign Up page loads successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sign Up Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SmokeTestRunner@5aebe890]" started-at="2026-02-12T18:27:31 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-12T18:27:40 EST" duration-ms="9076" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify mandatory field validation on Sign Up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sign Up Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at steps.SignUpStep.validation_messages_should_be_displayed_for_all_required_fields(SignUpStep.java:67)
+at ✽.validation messages should be displayed for all required fields(file:///C:/Users/OWNER/Eclipse-Workspace/SauceDemo/src/test/resources/features/SignUp.feature:17)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SmokeTestRunner@5aebe890]" started-at="2026-02-12T18:27:40 EST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-02-12T18:27:43 EST" duration-ms="3211" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify successful account creation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sign Up Functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a08f8288f8bf2e6555aed23df868c04, sendKeysToElement {value=[Ljava.lang.CharSequence;@55d9b8f0, id=f.9C8860B0E88CE356CB2044196B4E2E44.d.F5138878CE8F7E44A428D24482B00A58.e.20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\OWNER\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53850}, goog:processID: 15620, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53850/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3a08f8288f8bf2e6555aed23df868c04)] -> id: first_name]
+Session ID: 3a08f8288f8bf2e6555aed23df868c04]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=144.0.7559.133)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a08f8288f8bf2e6555aed23df868c04, sendKeysToElement {value=[Ljava.lang.CharSequence;@55d9b8f0, id=f.9C8860B0E88CE356CB2044196B4E2E44.d.F5138878CE8F7E44A428D24482B00A58.e.20}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\OWNER\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53850}, goog:processID: 15620, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53850/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3a08f8288f8bf2e6555aed23df868c04)] -> id: first_name]
+Session ID: 3a08f8288f8bf2e6555aed23df868c04
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at steps.SignUpStep.the_user_enters_valid_first_name_last_name_email_and_password(SignUpStep.java:108)
+at ✽.the user enters valid first name, last name, email, and password(file:///C:/Users/OWNER/Eclipse-Workspace/SauceDemo/src/test/resources/features/SignUp.feature:22)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.SmokeTestRunner@5aebe890]" started-at="2026-02-12T18:27:43 EST" name="tearDownClass" finished-at="2026-02-12T18:27:44 EST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.SmokeTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

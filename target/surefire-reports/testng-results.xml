@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-06T17:30:06 EDT" name="SmokeSuite" finished-at="2026-04-06T17:34:18 EDT" duration-ms="252359">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-04-06T17:30:06 EDT" name="Smoke Tests" finished-at="2026-04-06T17:34:18 EDT" duration-ms="252359">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:30:06 EDT" name="setUpClass" finished-at="2026-04-06T17:30:07 EDT" duration-ms="696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3a5ce4b8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:30:07 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:30:28 EDT" duration-ms="21328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify cart page loads and shows empty cart message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Cart Smoke Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:30:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:30:44 EDT" duration-ms="15673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify product page loads successfully"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Cart Smoke Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:30:44 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:31:03 EDT" duration-ms="18890" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify user can add a product to the cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Cart Smoke Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:31:03 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:31:14 EDT" duration-ms="11291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify homepage loads with essential UI elements"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Home Page Smoke Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:31:14 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:31:27 EDT" duration-ms="13080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SauceDemo Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:31:27 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:31:42 EDT" duration-ms="14961" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Logout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SauceDemo Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:31:42 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:31:57 EDT" duration-ms="15194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Catalog link opens the collection page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Navigation Links Smoke Suite"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:31:57 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:32:12 EDT" duration-ms="14280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Blog link opens the blog page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Navigation Links Smoke Suite"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:32:12 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:32:26 EDT" duration-ms="14808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify left navigation About Us link opens the About page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Navigation Links Smoke Suite"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:32:26 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:32:40 EDT" duration-ms="13156" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Checkout link opens the cart page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Navigation Links Smoke Suite"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:32:40 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:32:54 EDT" duration-ms="14057" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify footer Search link opens the search page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Navigation Links Smoke Suite"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:32:54 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:33:07 EDT" duration-ms="13001" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify footer About Us link opens the About Us page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Navigation Links Smoke Suite"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:33:07 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:33:18 EDT" duration-ms="11441" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search bar is visible and accepts input"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Smoke Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:33:18 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:33:32 EDT" duration-ms="14111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Valid search returns results"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Smoke Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:33:32 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:33:47 EDT" duration-ms="15305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Invalid search shows no results message"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Smoke Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:33:47 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:34:07 EDT" duration-ms="19100" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Clicking a search result opens product details page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Search Smoke Tests"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:34:07 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-04-06T17:34:18 EDT" duration-ms="11774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User tries to signup"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["SauceDemo Signup (Demo Simulation)"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@6b927fb]" started-at="2026-04-06T17:34:18 EDT" name="tearDownClass" finished-at="2026-04-06T17:34:18 EDT" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- SmokeSuite -->
+</testng-results>
