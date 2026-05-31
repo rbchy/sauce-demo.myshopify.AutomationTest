@@ -172,7 +172,7 @@ Upon suite teardown, the execution wrapper natively outputs a fully populated, s
 
 **Ranajit Baran Chowdhury**
 
-* 🚀 *QA Automation Engineer*
+* 🚀 *Software Programmer & QA Automation Engineer*
 * 📧 **Email:** chyranajit@gmail.com
 * 📱 **Phone:** +1 (267)-342-5565
 * 💼 **Connect:** Feel free to fork this project, open issues, or submit performance enhancements!
