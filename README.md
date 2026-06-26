@@ -506,7 +506,7 @@ This project is open-source under the **MIT License**.
 Software Programmer & QA Automation Engineer
 - 📧 Email: chyranajit@gmail.com
 - 📞 Phone: +1 (267) 342-5565
-- 🐙 GitHub: [@ranajitchowdhury](https://github.com/ranajitchowdhury)
+- 🐙 GitHub: [@ranajitchowdhury](https://github.com/rbchy)
 - 🌐 Portfolio: [rbc6543.wixsite.com/rbc-portfolio](https://rbc6543.wixsite.com/rbc-portfolio)
 - 💼 LinkedIn: [linkedin.com/in/ranajitchowdhury](https://linkedin.com/in/ranajitchowdhury)
 
